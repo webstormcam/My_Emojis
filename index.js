@@ -3,6 +3,8 @@ const emojiContainer=document.getElementById('emojiContainer')
 const button=document.getElementById('push-btn')
 const unShiftBtn=document.getElementById('unshift-btn')
 const emojiInput=document.getElementById('emoji-input')
+const popBtn=document.getElementById('pop-Btn')
+const 
 
 
 
