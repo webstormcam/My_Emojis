@@ -26,7 +26,6 @@ function getAllEmojis(){
 
 popBtn.addEventListener('click',function(){
     myEmojis.pop(emojiInput.value)
-    emojiInput.value=''
     console.log(myEmojis)
     getAllEmojis()
     
@@ -39,7 +38,6 @@ popBtn.addEventListener('click',function(){
 
 shiftBtn.addEventListener('click',function(){
     myEmojis.shift(emojiInput.value)
-    emojiInput.value=''
     console.log(myEmojis)
     getAllEmojis()
     
