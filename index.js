@@ -1,11 +1,13 @@
-const myEmojis = []
+const myEmojis = ["👨‍💻", "⛷", "🍲"]
 const emojiContainer=document.getElementById('emojiContainer')
 const button=document.getElementById('push-btn')
 const unShiftBtn=document.getElementById('unshift-btn')
 const emojiInput=document.getElementById('emoji-input')
 const popBtn=document.getElementById('pop-Btn')
-const 
+const shiftBtn=document.getElementById('shift-Btn')
 
+
+getAllEmojis()
 
 
 function getAllEmojis(){
@@ -17,6 +19,34 @@ function getAllEmojis(){
       }
       emojiContainer.innerHTML=emojis
 }
+
+
+
+
+
+popBtn.addEventListener('click',function(){
+    myEmojis.pop(emojiInput.value)
+    emojiInput.value=''
+    console.log(myEmojis)
+    getAllEmojis()
+    
+      
+   
+
+})
+
+
+
+shiftBtn.addEventListener('click',function(){
+    myEmojis.shift(emojiInput.value)
+    emojiInput.value=''
+    console.log(myEmojis)
+    getAllEmojis()
+    
+      
+   
+
+})
 
 
 
