@@ -5,7 +5,7 @@ const unShiftBtn=document.getElementById('unshift-btn')
 const emojiInput=document.getElementById('emoji-input')
 const popBtn=document.getElementById('pop-Btn')
 const shiftBtn=document.getElementById('shift-Btn')
-
+const nameTop=document.getElementById('top-font')
 
 getAllEmojis()
 
