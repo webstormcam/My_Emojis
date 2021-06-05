@@ -1,6 +1,7 @@
 const myEmojis = []
 const emojiContainer=document.getElementById('emojiContainer')
 const button=document.getElementById('push-btn')
+const unShiftBtn=document.getElementById('unshift-btn')
 const emojiInput=document.getElementById('emoji-input')
 
 
@@ -23,6 +24,21 @@ button.addEventListener('click',function(){
         console.log('No emoji, no push for you :)')
     } else{
     myEmojis.push(emojiInput.value)
+    emojiInput.value=''
+    console.log(myEmojis)
+    getAllEmojis()
+    }
+      
+   
+
+})
+
+
+unShiftBtn.addEventListener('click',function(){
+    if(emojiInput.value===''){
+        console.log('No emoji, no push for you :)')
+    } else{
+    myEmojis.unshift(emojiInput.value)
     emojiInput.value=''
     console.log(myEmojis)
     getAllEmojis()
